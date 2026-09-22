@@ -1,0 +1,39 @@
+name: Build and Deploy FNF HTML5
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Haxe
+        uses: haxe-actions/setup-haxe@v1
+        with:
+          haxe-version: 4.2.5
+
+      - name: Install Dependencies
+        run: |
+          haxelib setup ~/haxelib
+          haxelib install lime 8.0.1
+          haxelib install openfl
+          haxelib install flixel
+          haxelib run lime setup
+          haxelib install hscript
+          haxelib install actuate
+          haxelib git faxe https://github.com/as3mdf/faxe
+          haxelib git polymod https://github.com/larsiusprime/polymod.git
+
+      - name: Build HTML5 Release
+        run: haxelib run lime build html5 -final
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./export/release/html5/bin
