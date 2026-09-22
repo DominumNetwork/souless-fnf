@@ -1,0 +1,3 @@
+startcowntdown edit for penger to work with it better
+value 1 = nothing
+value 2 = nothing

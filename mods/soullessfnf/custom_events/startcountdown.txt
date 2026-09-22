@@ -1,0 +1,3 @@
+Plays the "3, 2, 1, Go!" at the start of a song whenever you like!
+value 1 = nothing
+value 2 = nothing

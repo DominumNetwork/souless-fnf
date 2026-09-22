@@ -1,0 +1,77 @@
+{
+	"storyName": "good luck",
+	"difficulties": "Easy, Normal, Hard",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"songs": [
+		[
+			"Soulless",
+			"bf",
+			[
+				110,
+				110,
+				110
+			]
+		],
+		[
+			"Soulless 2",
+			"bf",
+			[
+				70,
+				70,
+				70
+			]
+		],
+		[
+			"Soulless 3",
+			"bf",
+			[
+				70,
+				70,
+				70
+			]
+		],
+		[
+			"Soulless 4",
+			"bf",
+			[
+				50,
+				50,
+				50
+			]
+		],
+		[
+			"Soulless 5",
+			"bf",
+			[
+				70,
+				50,
+				50
+			]
+		],
+		[
+			"Soulless 6",
+			"bf",
+			[
+				150,
+				50,
+				50
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "soulless",
+	"hiddenUntilUnlocked": false
+}

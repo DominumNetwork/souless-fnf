@@ -1,0 +1,86 @@
+{
+	"storyName": "Other exilelord songs",
+	"difficulties": "Easy, Normal, Hard",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Amalgamation",
+			"bf",
+			[
+				70,
+				70,
+				70
+			]
+		],
+		[
+			"Obsidian",
+			"bf",
+			[
+				150,
+				50,
+				50
+			]
+		],
+		[
+			"Epidox",
+			"bf",
+			[
+				50,
+				50,
+				50
+			]
+		],
+		[
+			"Misadventure",
+			"bf",
+			[
+				50,
+				50,
+				50
+			]
+		],
+		[
+			"Speed test",
+			"bf",
+			[
+				30,
+				30,
+				30
+			]
+		],
+		[
+			"Hollow",
+			"bf",
+			[
+				50,
+				50,
+				50
+			]
+		],
+		[
+			"Soulless 4 Unnerfed",
+			"bf",
+			[
+				150,
+				30,
+				30
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "exile"
+}

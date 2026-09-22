@@ -1,0 +1,113 @@
+{
+	"storyName": "oh no",
+	"difficulties": "hard",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"songs": [
+		[
+			"Egoless act 1",
+			"bf",
+			[
+				70,
+				30,
+				30
+			]
+		],
+		[
+			"Egoless act 2",
+			"bf",
+			[
+				70,
+				30,
+				30
+			]
+		],
+		[
+			"Egoless act 3",
+			"bf",
+			[
+				50,
+				30,
+				30
+			]
+		],
+		[
+			"Egoless act 4",
+			"bf",
+			[
+				50,
+				30,
+				30
+			]
+		],
+		[
+			"Egoless act 5",
+			"bf",
+			[
+				150,
+				50,
+				50
+			]
+		],
+		[
+			"Egoless act 6",
+			"bf",
+			[
+				150,
+				50,
+				50
+			]
+		],
+		[
+			"Egoless act 7",
+			"bf",
+			[
+				110,
+				50,
+				50
+			]
+		],
+		[
+			"Egoless act 8",
+			"bf",
+			[
+				150,
+				50,
+				50
+			]
+		],
+		[
+			"Egoless act 9",
+			"bf",
+			[
+				255,
+				50,
+				50
+			]
+		],
+		[
+			"Egoless act 10",
+			"bf",
+			[
+				90,
+				90,
+				90
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "egoless",
+	"hiddenUntilUnlocked": false
+}

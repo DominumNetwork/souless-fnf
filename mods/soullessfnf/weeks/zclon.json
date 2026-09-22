@@ -1,0 +1,77 @@
+{
+	"storyName": "its clon time",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Supernovae",
+			"bf",
+			[
+				110,
+				20,
+				20
+			]
+		],
+		[
+			"Supernovae Uber Solo",
+			"bf",
+			[
+				170,
+				20,
+				20
+			]
+		],
+		[
+			"Prevail",
+			"bf",
+			[
+				90,
+				20,
+				20
+			]
+		],
+		[
+			"Crisis City",
+			"bf",
+			[
+				50,
+				20,
+				20
+			]
+		],
+		[
+			"Penger",
+			"bf",
+			[
+				50,
+				20,
+				20
+			]
+		],
+		[
+			"Victory Solo X",
+			"bf",
+			[
+				70,
+				20,
+				20
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "extras"
+}
