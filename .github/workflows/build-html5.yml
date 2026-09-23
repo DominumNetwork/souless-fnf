@@ -20,11 +20,11 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          haxelib install lime --quiet
-          haxelib install openfl --quiet
-          haxelib install flixel --quiet
-          haxelib install flixel-addons --quiet
-          haxelib install flixel-ui --quiet
+          haxelib install lime 8.0.1 --quiet
+          haxelib install openfl 9.3.2 --quiet
+          haxelib install flixel 5.5.0 --quiet
+          haxelib install flixel-addons 3.2.1 --quiet
+          haxelib install flixel-ui 2.5.0 --quiet
           haxelib install hscript --quiet
           haxelib git faxe https://github.com/uhrobots/faxe
           haxelib run lime setup
