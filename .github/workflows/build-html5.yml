@@ -1,8 +1,9 @@
-name: Build and Deploy FNF HTML5
+name: Build HTML5
 
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -10,30 +11,25 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Haxe
         uses: krdlab/setup-haxe@v2
         with:
-          haxe-version: 4.2.5
+          haxe-version: 4.3.4
+
+      - name: Configure Git
+        run: |
+          git config --global url."https://github.com/".insteadOf git@github.com:
+          git config --global url."https://github.com/".insteadOf git://github.com/
 
       - name: Install Dependencies
         run: |
-          haxelib setup ~/haxelib
-          haxelib install lime 8.0.1
-          haxelib install openfl
-          haxelib install flixel
-          haxelib run lime setup
-          haxelib install hscript
-          haxelib install actuate
+          haxelib install lime --quiet
+          haxelib install openfl --quiet
+          haxelib install flixel --quiet
           haxelib git faxe https://github.com/as3mdf/faxe
-          haxelib git polymod https://github.com/larsiusprime/polymod.git
+          haxelib run lime setup
 
-      - name: Build HTML5 Release
+      - name: Build Web Port
         run: haxelib run lime build html5 -final
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./export/release/html5/bin
