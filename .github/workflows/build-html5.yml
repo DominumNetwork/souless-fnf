@@ -23,7 +23,10 @@ jobs:
           haxelib install lime --quiet
           haxelib install openfl --quiet
           haxelib install flixel --quiet
-          haxelib git faxe https://github.com/ashea-code/faxe
+          haxelib install flixel-addons --quiet
+          haxelib install flixel-ui --quiet
+          haxelib install hscript --quiet
+          haxelib git faxe https://github.com/uhrobots/faxe
           haxelib run lime setup
 
       - name: Build Web Port
