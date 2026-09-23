@@ -23,8 +23,8 @@ jobs:
           haxelib install lime --quiet
           haxelib install openfl --quiet
           haxelib install flixel --quiet
-          haxelib install faxe --quiet
+          haxelib git faxe https://github.com/ashea-code/faxe
           haxelib run lime setup
 
       - name: Build Web Port
-        run: haxelib run lime build html5 -final
+        run: haxelib run lime build html5 -final -D web
