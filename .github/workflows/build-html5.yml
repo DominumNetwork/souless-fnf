@@ -18,18 +18,12 @@ jobs:
         with:
           haxe-version: 4.3.4
 
-      - name: Configure Git
-        run: |
-          git config --global url."https://github.com/".insteadOf git@github.com:
-          git config --global url."https://github.com/".insteadOf git://github.com/
-
       - name: Install Dependencies
         run: |
           haxelib install lime --quiet
           haxelib install openfl --quiet
           haxelib install flixel --quiet
-          # Use an active faxe mirror/fork:
-          haxelib git faxe https://github.com/TeeGee-S/faxe
+          haxelib install faxe --quiet
           haxelib run lime setup
 
       - name: Build Web Port
